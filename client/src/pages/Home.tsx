@@ -322,7 +322,7 @@ export default function App() {
 
       {/* ── Hero ── */}
       <section id="hero" style={{ position: "relative", minHeight: "100vh", display: "flex", alignItems: "center", paddingTop: 64 }}>
-        <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${IMG_HERO})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${IMG_HERO})`, backgroundSize: "cover", backgroundPosition: "right center" }}>
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to right, ${C.bg}, ${C.bg}d9, ${C.bg}66)` }} />
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, ${C.bg}, transparent 60%)` }} />
         </div>
