@@ -1,0 +1,248 @@
+/*
+ * ============================================================
+ * SER Estética & Bem-Estar — CORREÇÃO: Cards Retangulares
+ * ============================================================
+ * Cole este arquivo em /src/styles/retangular-overrides.css
+ * e importe-o no topo de src/index.css OU em App.jsx assim:
+ *   import './styles/retangular-overrides.css';
+ * ============================================================
+ */
+
+/* ──────────────────────────────────────────────
+   1. RESET GLOBAL DE BORDER-RADIUS EM CARDS/BOXES
+   Todos os elementos com aparência de card
+────────────────────────────────────────────── */
+
+/* Qualquer div, section ou article com classe contendo
+   "card", "box", "block", "stat", "service", "feature",
+   "testimonial", "review", "item" passa a ser retangular */
+[class*="card"],
+[class*="Card"],
+[class*="-box"],
+[class*="Box"],
+[class*="block"],
+[class*="Block"],
+[class*="stat"],
+[class*="Stat"],
+[class*="service"],
+[class*="Service"],
+[class*="feature"],
+[class*="Feature"],
+[class*="testimonial"],
+[class*="Testimonial"],
+[class*="review"],
+[class*="Review"],
+[class*="item"],
+[class*="Item"],
+[class*="panel"],
+[class*="Panel"],
+[class*="tile"],
+[class*="Tile"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   2. HOMEPAGE — Cards de Estatísticas (300+, 5k+, 98%, 5+)
+   (Hero section com os 4 blocos de números)
+────────────────────────────────────────────── */
+.stats-grid > *,
+.stats-grid > div,
+.stats-container > *,
+.stats-container > div,
+.hero-stats > *,
+.hero-stats > div,
+.numbers-grid > *,
+.numbers-grid > div,
+[class*="stats"] > div,
+[class*="Stats"] > div,
+[class*="metric"],
+[class*="Metric"],
+[class*="counter"],
+[class*="Counter"],
+[class*="number-card"],
+[class*="stat-card"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   3. PÁGINA DE SERVIÇOS — Cards de Serviços
+   (Quick Massage, Reiki, Revitalização Facial, etc.)
+────────────────────────────────────────────── */
+.services-grid > *,
+.services-grid > div,
+.services-list > *,
+.service-item,
+.service-card,
+[class*="service-card"],
+[class*="ServiceCard"],
+[class*="service-item"],
+[class*="ServiceItem"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   4. PÁGINA DE DEPOIMENTOS — Cards de Avaliação
+   (Cards com estrelas e textos de clientes)
+────────────────────────────────────────────── */
+.testimonials-grid > *,
+.testimonials-grid > div,
+.testimonial-item,
+.testimonial-card,
+.review-card,
+.review-item,
+[class*="testimonial-card"],
+[class*="TestimonialCard"],
+[class*="review-card"],
+[class*="ReviewCard"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   5. CONTATO — Botões de WhatsApp
+   (Ícones de telefone com fundo arredondado)
+────────────────────────────────────────────── */
+.whatsapp-button,
+.contact-button,
+.phone-button,
+.contact-icon,
+.contact-icon-wrapper,
+[class*="whatsapp"],
+[class*="WhatsApp"],
+[class*="contact-btn"],
+[class*="ContactBtn"],
+[class*="icon-box"],
+[class*="IconBox"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   6. FORMULÁRIO DE CONTATO — Container e Inputs
+   (Campos: Nome, E-mail, Telefone, Tipo de Evento, etc.)
+────────────────────────────────────────────── */
+.contact-form,
+.form-container,
+.form-wrapper,
+[class*="contact-form"],
+[class*="ContactForm"],
+[class*="form-card"],
+[class*="FormCard"] {
+  border-radius: 4px !important;
+}
+
+/* Campos de input e textarea */
+input,
+textarea,
+select,
+.input-field,
+[class*="input"],
+[class*="Input"],
+[class*="field"],
+[class*="Field"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   7. BOTÕES GERAIS (CTAs, "Fale Conosco", etc.)
+   NOTA: Botões de ação principal mantém 4px para
+   ter bordas limpas mas não totalmente duras.
+   Se quiser 0px (totalmente reto), troque para 0px.
+────────────────────────────────────────────── */
+button,
+.btn,
+.button,
+a[class*="btn"],
+a[class*="button"],
+[class*="cta"],
+[class*="CTA"],
+[class*="Cta"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   8. BOTÃO "ORÇAMENTO" DA NAVBAR
+   (Botão destacado no canto superior direito)
+────────────────────────────────────────────── */
+nav [class*="budget"],
+nav [class*="Budget"],
+nav [class*="orcamento"],
+nav [class*="Orcamento"],
+nav [class*="cta"],
+nav button,
+nav a[class*="btn"] {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   9. COBERTURA POR CLASSES TAILWIND
+   (Caso o projeto use Tailwind CSS)
+   Sobrescreve as classes rounded-* para 4px
+────────────────────────────────────────────── */
+.rounded,
+.rounded-sm,
+.rounded-md,
+.rounded-lg,
+.rounded-xl,
+.rounded-2xl,
+.rounded-3xl,
+.rounded-full:not(img):not(svg):not([class*="avatar"]):not([class*="Avatar"]):not([class*="photo"]):not([class*="Photo"]):not([class*="logo"]):not([class*="Logo"]):not([class*="icon-circle"]):not([class*="dot"]):not([class*="badge"]) {
+  border-radius: 4px !important;
+}
+
+/* ──────────────────────────────────────────────
+   10. PRESERVAR elementos que DEVEM ser circulares
+   (Avatares, logos, ícones circulares)
+────────────────────────────────────────────── */
+img,
+svg,
+[class*="avatar"],
+[class*="Avatar"],
+[class*="logo"],
+[class*="Logo"],
+[class*="icon-circle"],
+[class*="dot"],
+[class*="badge"],
+[class*="Badge"],
+[class*="chip"],
+[class*="Chip"],
+[class*="tag"],
+[class*="Tag"],
+[class*="pill"],
+[class*="Pill"] {
+  /* Remove o !important para permitir o estilo original */
+  border-radius: revert;
+}
+
+/*
+ * ============================================================
+ * COMO APLICAR NO MANUS / GITHUB:
+ *
+ * OPÇÃO A — Se o projeto tem /src/index.css ou /src/App.css:
+ *   Abra o arquivo e adicione no topo:
+ *   @import './retangular-overrides.css';
+ *
+ * OPÇÃO B — Se o projeto usa /src/App.jsx ou /src/main.jsx:
+ *   Adicione no topo do arquivo:
+ *   import './styles/retangular-overrides.css';
+ *
+ * OPÇÃO C — Se usar Tailwind (tailwind.config.js existe):
+ *   Veja as instruções adicionais abaixo.
+ * ============================================================
+ *
+ * ALTERNATIVA TAILWIND — adicione em tailwind.config.js:
+ *
+ * theme: {
+ *   extend: {
+ *     borderRadius: {
+ *       DEFAULT: '4px',
+ *       sm: '2px',
+ *       md: '4px',
+ *       lg: '4px',
+ *       xl: '4px',
+ *       '2xl': '4px',
+ *       '3xl': '4px',
+ *       full: '4px',
+ *     }
+ *   }
+ * }
+ * ============================================================
+ */
