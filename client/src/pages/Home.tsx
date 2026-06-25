@@ -322,9 +322,9 @@ export default function App() {
 
       {/* ── Hero ── */}
       <section id="hero" style={{ position: "relative", minHeight: "100vh", display: "flex", alignItems: "center", paddingTop: 64 }}>
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('/imagem/imagem.jpg')", backgroundSize: "cover", backgroundPosition: "75% center" }}>
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('/imagem/imagem.jpg')", backgroundSize: "cover", backgroundPosition: "90% center" }}>
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to right, ${C.bg}, ${C.bg}d9, ${C.bg}66)` }} />
-          <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, ${C.bg}, transparent 40%)` }} />
+          <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, ${C.bg}, transparent 50%)` }} />
         </div>
         <div style={{ position: "absolute", top: "33%", left: "50%", transform: "translate(-50%,-50%)", width: 384, height: 384, borderRadius: "50%", background: `${C.lilac}1a`, filter: "blur(64px)", pointerEvents: "none" }} />
 
