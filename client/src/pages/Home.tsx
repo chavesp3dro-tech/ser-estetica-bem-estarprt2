@@ -335,10 +335,17 @@ export default function App() {
               <span style={{ color: C.rose, fontSize: 11, letterSpacing: "0.4em", textTransform: "uppercase", fontWeight: 500 }}>O Seu Corpo em Pleno Equilíbrio</span>
             </div>
             <h1 style={{ ...styles.playfair, fontSize: "clamp(40px,6vw,72px)", fontWeight: 700, lineHeight: 1.05, color: C.text }}>
-              Bem-Estar{" "}
-              <span style={{ background: `linear-gradient(to right, ${C.rose}, ${C.roseLight})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Premium</span>
-              {" "}para Eventos
-            </h1>
+  Eleve Seus Eventos com{" "}
+  <span
+    style={{
+      background: `linear-gradient(to right, ${C.rose}, ${C.roseLight})`,
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent"
+    }}
+  >
+    Experiências Únicas e Memoráveis
+  </span>
+</h1>
             <GoldDivider />
             <p style={{ color: C.lilacMuted, fontSize: 18, lineHeight: 1.7, maxWidth: 420, fontWeight: 300 }}>
               Quick Massage, Reiki e Revitalização Facial em eventos, congressos, feiras, despedidas de solteira e empresas. Terapeutas certificadas com equipamentos e produtos profissionais.
