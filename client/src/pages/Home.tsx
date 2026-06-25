@@ -351,7 +351,7 @@ export default function App() {
               Quick Massage, Reiki e Revitalização Facial em eventos, congressos, feiras, despedidas de solteira e empresas. Terapeutas certificadas com equipamentos e produtos profissionais.
             </p>
             <div style={{ display: "flex", gap: 16, paddingTop: 16, flexWrap: "wrap" }}>
-              <a href=href="https://wa.me/5521991219642?text=Olá!%20Gostaria%20de%20receber%20um%20orçamento."
+              <a href="https://wa.me/5521991219642?text=Ola%2C%20gostaria%20de%20receber%20um%20orcamento%20para%20conhecer%20os%20servicos."
                 Solicitar um Orçamento <ChevronRight size={16} />
               </a>
               <a href="#services" className="outline-btn" style={{ padding: "16px 32px" }}>Ver Serviços</a>
