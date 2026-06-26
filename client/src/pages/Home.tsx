@@ -196,7 +196,7 @@ function TagBadge({ label }: any) {
   );
 }
 
-function LogoImg({ size = 70 }: { size?: number }) {
+function LogoImg({ size = 20 }: { size?: number }) {
   return (
     <div style={{ width: size, height: size, borderRadius: "50%", overflow: "hidden", border: `1px solid ${C.rose}44`, background: C.muted, display: "flex", alignItems: "center", justifyContent: "center" }}>
       <img src={IMG_LOGO} alt="SER Logo" style={{ width: "80%", height: "80%", objectFit: "contain" }} />
